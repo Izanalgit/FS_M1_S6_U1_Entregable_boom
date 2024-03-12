@@ -76,16 +76,18 @@ function wanaPlayAGame (user,computer){
 }
 
 function worldsafe(user,computer){
+    endGame.classList.add('green');
     endGame.innerHTML = `
-        <p>Enhorabuena, has salvado el mundo</p>
-        <p>Tu número ${user} es el mismo que el número ${computer}</p>
+        <h2>Enhorabuena, has salvado el mundo</h2>
+        <h2>Tu número ${user} es el mismo que el número ${computer}</h2>
     `;
 }
 
 function worlddown(user,computer){
+    endGame.classList.add('red');
     endGame.innerHTML = `
-        <p>Enhoramala, has destruido el mundo</p>
-        <p>Tu número ${user} NO coincide con el número ${computer}</p>
+        <h2>Enhoramala, has destruido el mundo</h2>
+        <h2>Tu número ${user} NO coincide con el número ${computer}</h2>
     `;
 }
 
